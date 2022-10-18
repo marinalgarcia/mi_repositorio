@@ -8,11 +8,11 @@
 </head>
 <body>
 
-    <h1>Lista de mis familiares</h1>
+    <h2 style="color:darkblue;"><u>Listado de mis familiares</u></h2>
 
     {% for familiar in lista_familiares %}
         <ul>
-            <li> Nombre: {{familiar.nombre}}, Dirección: {{familiar.direccion}}, Pasaporte: {{familiar.numero_pasaporte}} </li>
+            <li> <b><i>Nombre:</i></b> {{familiar.nombre}}, <b><i>Dirección:</i></b> {{familiar.direccion}}, <b><i>Documento:</i></b> {{familiar.numero_documento}}, <b><i>CP:</i></b> {{familiar.codigo_postal}} </li>
         </ul>
     {% endfor %}
     
